@@ -4,6 +4,6 @@ const db = require("../config/db");
 const { auth, isAdmin } = require("../middleware/auth");
 const adminController=require("../controllers/adminController");
 
-router.get("/admin",[auth,isAdmin],adminController.admin);
+router.get("/",[auth,isAdmin],adminController.admin);
 
 module.exports = router;

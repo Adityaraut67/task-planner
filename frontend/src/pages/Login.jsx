@@ -156,29 +156,6 @@ export default function Login() {
               {!loading && <ArrowForwardIcon />}
             </button>
           </form>
-
-          {/* Divider */}
-          <div className="divider">
-            <div className="divider-line"></div>
-            <span className="divider-text">or</span>
-            <div className="divider-line"></div>
-          </div>
-
-          {/* Social Logins */}
-          <div className="social-grid">
-            <button className="btn-social" type="button" onClick={() => alert("Google login clicked")}>
-              <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm8a8wDzXX_qteXaFQRobiCeuG5YJoPDDpbwJtLeZAaIXSKVoDh5nXh1sBIHRpusLfjjG6ZG8487aSDs4MNYUABC2Mfz-PmAkGtQ4gqfQAR23B6tYlSSmhb5Qmyu2hhwPLXicl1FeQljSERtO_pQeQEvP1mmRt0Z76GSUJWEDXnctXedy5n1E-I0wydRnM9TwmUhE3n6kx_49CFb9aZgyYDQ5wzcQbpg1tPqNYDodj_e9VU-mtvwOC8w0t4XNFUgNWdQEJkn5MM2pm"
-                alt="Google"
-                className="social-img"
-              />
-              <span className="social-text">Google</span>
-            </button>
-            <button className="btn-social" type="button" onClick={() => alert("GitHub login clicked")}>
-              <TerminalIcon />
-              <span className="social-text">GitHub</span>
-            </button>
-          </div>
         </div>
 
         {/* Register Link */}

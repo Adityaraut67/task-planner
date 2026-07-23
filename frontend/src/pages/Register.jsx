@@ -5,25 +5,6 @@ import "./Register.css";
 import api from "../api/axios";
 import {useAuth} from "../context/AuthContext";
 
-// SVG inline icon for Github button
-const TerminalIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="18"
-    height="18"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className="register-social-icon github-svg"
-    viewBox="0 0 24 24"
-  >
-    <polyline points="4 17 10 11 4 5"></polyline>
-    <line x1="12" y1="19" x2="20" y2="19"></line>
-  </svg>
-);
-
 export default function Register() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -285,36 +266,6 @@ export default function Register() {
                 )}
               </button>
 
-              {/* Social Login Separator */}
-              <div className="register-separator">
-                <div className="register-separator-line"></div>
-                <span className="register-separator-text">Or continue with</span>
-                <div className="register-separator-line"></div>
-              </div>
-
-              {/* Social Logins */}
-              <div className="register-social-grid">
-                <button
-                  className="register-btn-social"
-                  type="button"
-                  onClick={() => alert("Google registration clicked")}
-                >
-                  <img
-                    className="register-social-icon"
-                    alt="Google"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJpd32V_FaYFgY4-vagmuwdZ-phoZBktl8acyHNVrBnyd911wRkpKO9NlQB9uO9d2M7_B6wZVtxNlvIkrrgBAtJmQ6q4rzr1lGB073llsha25Y2YGKX5Mv0mUwpOqCcE_5vxLnwJRYZ0a3e8-O9wkeUKVvwBu1gGvCpucU5GSwQqKDiVsZ4_QNLsqFlStvDLo6e6FFT08PBF3JKVsbfyJoZEwTazEdrQSXeB1ribiOTZ8Mkfzh-CEsKYz5Xz5prZe4tbGAY1TxqM0D"
-                  />
-                  <span>Google</span>
-                </button>
-                <button
-                  className="register-btn-social"
-                  type="button"
-                  onClick={() => alert("GitHub registration clicked")}
-                >
-                  <TerminalIcon />
-                  <span>GitHub</span>
-                </button>
-              </div>
             </form>
 
             {/* Redirect back to Login */}
@@ -326,28 +277,6 @@ export default function Register() {
             </div>
           </div>
 
-          {/* Security Trust Badge Footer */}
-          <div className="register-security-row">
-            <div className="register-security-badge">
-              <span
-                className="material-symbols-outlined register-security-icon"
-                style={{ fontVariationSettings: "'FILL' 1" }}
-              >
-                encrypted
-              </span>
-              <span className="register-security-text">Enterprise Encryption</span>
-            </div>
-            <div className="register-security-dot"></div>
-            <div className="register-security-badge">
-              <span
-                className="material-symbols-outlined register-security-icon"
-                style={{ fontVariationSettings: "'FILL' 1" }}
-              >
-                cloud_done
-              </span>
-              <span className="register-security-text">GDPR Compliant</span>
-            </div>
-          </div>
         </div>
       </main>
 

@@ -11,7 +11,7 @@ const analyticsRoutes=require("./routes/analyticsRoutes.js");
 const dashboardRoutes=require("./routes/dashboardRoutes.js");
 const authRoutes=require("./routes/authRoutes.js");
 const aiRoutes=require("./routes/aiRoutes.js");
-const adminRoutes=require("./routes/admin.js")
+const adminRoutes=require("./routes/adminRoutes.js")
 
 app.use(cors());
 app.use(express.json());

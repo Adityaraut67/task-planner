@@ -401,7 +401,7 @@ export default function AIPlanner() {
   };
 
   const username = user?.username || user?.email?.split("@")[0] || "Alex Rivers";
-  const avatarImage = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80";
+  const avatarImage = "";
 
   return (
     <div className="pl-root">
@@ -429,7 +429,6 @@ export default function AIPlanner() {
         handleAcceptPrompt={handleAcceptPrompt}
         generating={generating}
         handleGenerate={handleGenerate}
-        avatarImage={avatarImage}
         messagesEndRef={messagesEndRef}
         inputVal={inputVal}
         setInputVal={setInputVal}

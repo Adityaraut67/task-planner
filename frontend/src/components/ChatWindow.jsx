@@ -2,16 +2,18 @@ const Icon = ({ name, className = "", style = {} }) => (
   <span className={`ms-icon material-symbols-outlined ${className}`} style={style}>{name}</span>
 );
 
+import { useAuth } from "../context/AuthContext";
+
 export default function ChatWindow({
   activeSession,
   handleAcceptPrompt,
   generating,
   handleGenerate,
-  avatarImage,
   messagesEndRef,
   inputVal,
   setInputVal
 }) {
+    const {user}=useAuth();
     return (
         
         <>
@@ -135,7 +137,7 @@ export default function ChatWindow({
 
                 {msg.sender === "user" && (
                   <div className="pl-msg-avatar">
-                    <img src={avatarImage} alt="User Avatar" />
+                    {user.username[0].toUpperCase()}
                   </div>
                 )}
               </div>

@@ -37,7 +37,6 @@ const {logout} =useAuth();
           
           <div className="ad-user-profile">
             <div className="ad-avatar">
-              {/* <img src={avatarImage} alt="User Avatar" /> */}
               {user.username[0].toUpperCase()}
             </div>
             <div className="ad-user-info">
@@ -50,7 +49,6 @@ const {logout} =useAuth();
           </div>
         </div>
       </aside>
-      {/* ══ HISTORY SIDEBAR COLUMN ══ */}
       
       </>
 

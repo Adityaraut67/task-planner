@@ -3,8 +3,6 @@ import { useState } from 'react';
 export default function TaskCard({task ,DeleteTask,Complete,setEditingTask}){
   
 
-  // const [edit,setEdit]=useState(false);
-
     let styles = task.completed
   ? {
       textDecoration:"line-through",

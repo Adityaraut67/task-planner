@@ -405,24 +405,23 @@ export default function AIPlanner() {
 
   return (
     <div className="pl-root">
-      {/* ══ SIDEBAR ══ */}
+      {/* ══ SIDEBAR + HISTORY ══ */}
       <Sidebar
         NAV_ITEMS={NAV_ITEMS}
         avatarImage={avatarImage}
         user={user}
-      />
-      
-      {/* ══ HISTORY SIDEBAR ══ */}
-      <History
-        handleNewChat={handleNewChat}
-        searchQuery={searchQuery}
-        setSearchQuery={setSearchQuery}
-        filteredSessions={filteredSessions}
-        activeSessionId={activeSessionId}
-        setActiveSessionId={setActiveSessionId}
-        setGenerating={setGenerating}
-      />
-      
+      >
+        <History
+          handleNewChat={handleNewChat}
+          searchQuery={searchQuery}
+          setSearchQuery={setSearchQuery}
+          filteredSessions={filteredSessions}
+          activeSessionId={activeSessionId}
+          setActiveSessionId={setActiveSessionId}
+          setGenerating={setGenerating}
+        />
+      </Sidebar>
+
       {/* ══ CHAT INTERFACE ══ */}
       <ChatWindow
         activeSession={activeSession}

@@ -12,7 +12,7 @@ export default function History({
   setGenerating
 }) {
     return(
-        <aside className="pl-history-col">
+        <div className="pl-history-panel">
         <div className="pl-history-header">
           <h2>History</h2>
           <button className="pl-new-chat-btn" onClick={handleNewChat} title="New Planning Session">
@@ -89,6 +89,6 @@ export default function History({
             </p>
           )}
         </ul>
-      </aside>
+      </div>
     )
 }

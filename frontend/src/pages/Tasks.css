@@ -36,58 +36,7 @@
   -webkit-font-smoothing: antialiased;
 }
 
-/* ══════════════════════════════════
-   SIDEBAR  (same as Dashboard)
-══════════════════════════════════ */
-.tk-sidebar {
-  position: fixed;
-  top: 0; left: 0;
-  width: 210px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: rgba(255,255,255,0.84);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-right: 1px solid rgba(114,119,133,0.12);
-  box-shadow: 0 0 40px rgba(0,88,190,0.05);
-  z-index: 50;
-}
 
-.tk-brand { padding: 20px 18px 14px; }
-.tk-brand h1 {
-  font-size: 17px; font-weight: 700;
-  color: var(--tp-primary);
-  letter-spacing: -0.02em; margin: 0;
-}
-.tk-brand p {
-  font-size: 11px; color: var(--tp-on-variant);
-  margin: 2px 0 0; font-family: 'Geist', sans-serif;
-}
-
-.tk-nav {
-  flex: 1; padding: 4px 10px;
-  display: flex; flex-direction: column; gap: 2px;
-  list-style: none; margin: 0;
-}
-.tk-nav-item {
-  display: flex; align-items: center; gap: 10px;
-  padding: 9px 12px; border-radius: 10px;
-  font-size: 14px; font-weight: 500;
-  color: var(--tp-on-variant);
-  text-decoration: none; cursor: pointer;
-  transition: background 0.18s, color 0.18s;
-  border: none; background: none; width: 100%;
-}
-.tk-nav-item:hover { background: rgba(225,226,236,0.55); color: var(--tp-on-surface); }
-.tk-nav-item.active {
-  background: rgba(0,88,190,0.09); color: var(--tp-primary);
-  font-weight: 700; border-left: 3px solid var(--tp-primary);
-  padding-left: 9px;
-}
-.tk-nav-item .ms { font-family: 'Material Symbols Outlined'; font-size: 20px; font-style: normal; font-weight: 400; line-height: 1; }
-
-.tk-sidebar-bottom { padding: 12px; border-top: 1px solid rgba(114,119,133,0.1); }
 
 .tk-plan-box {
   background: var(--tp-primary);

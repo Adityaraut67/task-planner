@@ -209,3 +209,12 @@ body.sidebar-collapsed .pl-sidebar-toggle {
 .pl-chat-col {
   transition: left 0.24s ease, margin-left 0.24s ease, width 0.24s ease;
 }
+.pl-history-list{
+  max-height: 300px;
+  overflow-y: auto;
+
+  border:1px solid #ccc;
+  padding:10px;
+  border-radius:8px;
+
+}
